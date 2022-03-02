@@ -1,53 +1,82 @@
 :root{
     --bg: rgb(219, 255, 248);
     --nav-bg: rgba(172, 187, 255, 0.97);
+    --nav-btn-hover: rgba(233, 219, 255, 0.911);
     --border-radius-l:25px;
     --border-radius-s:10px;
     --bg-darker: #3a5a55b0;
-    --bg-lighter: rgb(135, 207, 177)
+    --bg-lighter: rgb(135, 207, 177);
+
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: var(--bg);
+    margin-bottom: 10ch;
+    cursor: url("/static/images/cursor.png"), default;
+    background-attachment: fixed;
+}
+body::before{
+    content: "";
+    background-image: url("/static/images/marble.jpeg");
+    background-size: cover;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.9;
+    z-index: -1;
 }
 
-/* width */
+/* ###################################################################### */
+/* SCROLLBAR DESIGN */
+/* ###################################################################### */
 ::-webkit-scrollbar {
     width: 1.5ch;
     max-width: 1ch;
     margin: 2vh;
 }
-
-/* Track */
 ::-webkit-scrollbar-track {
     background: var(--bg-darker);
     border-radius: var(--border-radius-l);
 }
-
-/* Handle */
 ::-webkit-scrollbar-thumb {
     border-radius: var(--border-radius-l);
     background: var(--bg-lighter);
 }
-
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: var(--nav-bg);
 }
 
-body{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: var(--bg);
-    margin: 1ch 2ch;
-    padding-top: 1ch;
-    /* text-align: center; */
-    background-attachment: fixed;
-}
 
+/* ###################################################################### */
+/* NAVBAR DESIGN */
+/* ###################################################################### */
+.navbar{
+    margin: 2ch;
+    text-align: center;
+    box-shadow: 5px 5px 8px var(--bg-darker);
+}
+.navbar::before{
+    content: "";
+    background-image: url('/static/images/grain.png');
+    position: absolute;
+    border-radius: var(--border-radius-l);
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.2;
+    z-index: -1;
+}
+.fixed-bottom{
+    position: fixed;
+    transform: translate(-50%, 0);
+    left: 50%;
+    width: 95vw;
+}
 .sticky-top{
     top: 2ch;
-}
-
-.navbar{
-    margin-bottom: 2ch;
-    text-align: center;
-
 }
 .nav{
     align-items: center;
@@ -55,21 +84,36 @@ body{
 }
 .navbar-brand{
     position: fixed;
+    padding: 0;
+    margin: 0;
     top: 3.8ch;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-stretch: ultra-expanded;
+}
+@media (max-width: 760px) {
+    .navbar-brand{
+        top: 2.3ch;
+    }
+    .navbar{
+        margin: 2ch 0;
+    }
 }
 @media (max-width: 1270px) and (min-width: 991px){
     .navbar-brand{
-        position: fixed;
-        top: 3.8ch;
         left: 80%;
-        transform: translate(-50%, -50%);
     }
 }
 @media (max-width: 991px) {
     .nav{
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        align-content: center;
+    }
+    .nav *{
+        width: 15ch;
     }
 }
 
@@ -79,17 +123,16 @@ body{
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: rgb(41, 65, 44);
-  background-color: var(--bg)
+  background-color: var(--bg);
+  box-shadow: 5px 5px 8px var(--bg-darker);
 }
 .nav-link{
     color: black;
 }
 .nav-link:hover{
     color: black;
-    background-color: rgba(233, 219, 255, 0.911);
+    background-color: var(--nav-btn-hover);
 }
-
-
 .navbar, .dropdown-menu, .navbar-toggler {
     background-color: var(--nav-bg);
     border-radius: var(--border-radius-l);
@@ -97,4 +140,40 @@ body{
 }
 .dropdown-item:hover{
     border-radius: var(--border-radius-s);
+}
+
+
+/* ###################################################################### */
+/* TAB BEHAVIOUR */
+/* ###################################################################### */
+.tab-pane {
+    animation-name: fade-in-text;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in-out;
+}
+@keyframes fade-in-text {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.tab-content > .active{
+    margin: 2ch 2ch 0 2ch;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 2ch;
+}
+.tab-content > .active > *{
+    min-width: 30ch;
+    max-height: 90vh;
+}
+/* ###################################################################### */
+/* CARD STYLE */
+/* ###################################################################### */
+.card{
+    /* margin: 2ch 2ch; */
+    padding: 2ch;
 }
