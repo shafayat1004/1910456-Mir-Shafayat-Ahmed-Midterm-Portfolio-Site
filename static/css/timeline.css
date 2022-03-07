@@ -1,0 +1,106 @@
+:root{
+    --bg: rgb(219, 255, 248);
+    --nav-bg: rgba(172, 187, 255, 0.97);
+    --nav-btn: rgba(244, 230, 255, 0.911);
+    --nav-btn-hover: rgb(243, 238, 255);
+    --border-radius-l:25px;
+    --border-radius-s:10px;
+    --bg-darker: #3a5a55b0;
+    --bg-lighter: rgb(135, 207, 177);
+	--timeline-bg: rgba(197, 255, 130, 0);
+	--shadows: 20px 20px 30px;
+	--border-width: 0.3rem;
+	--marker-color: #ff8080;
+	--card-bg: rgba(255, 241, 196, 0.76);
+	--shadows-inner: 1px 1px 10px inset var(--bg-darker), -1px -1px 10px inset var(--bg-darker)
+}
+
+
+.education-timeline{
+	max-width: 100ch;
+	
+}
+
+ul.timeline-list {
+	position: relative;
+	margin: 0;
+	padding: 0
+}
+ul.timeline-list:before {
+	position: absolute;
+	content: "";
+	width: var(--border-width);
+	box-shadow: var(--shadows);
+	border-radius: var(--border-radius-s);
+	height: 100%;
+	background-color: var(--nav-bg);
+	left: 50%;
+	top: 0;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+ul.timeline-list li:before {
+	position: absolute;
+	content: "";
+	width: 20px;
+	height: 20px;
+	background-color: var(--marker-color);
+	box-shadow: var(--shadows);
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+	border-radius: 50%;
+}
+ul.timeline-list li {
+	min-width: 45rem;
+	position: relative;
+	clear: both;
+	display: table;
+}
+.timeline_content {
+	border: var(--border-width) solid var(--nav-bg);
+	box-shadow: var(--shadows), var(--shadows-inner);
+	border-radius: var(--border-radius-s);
+	background-color: var(--card-bg)
+}
+ul.timeline-list li .timeline_content {
+	width: 45%;
+	color: #333;
+	padding: 30px;
+	float: left;
+	text-align: right;
+}
+ul.timeline-list li:nth-child(2n) .timeline_content {
+	float: right;
+	text-align: left;
+}
+.timeline_content h4 {
+	font-size: 22px;
+	font-weight: 600;
+	margin: 10px 0;
+}
+.timeline_content span {
+	font-size: 18px;
+	font-weight: 500;
+	font-family: poppins;
+	color: var(--marker-color);
+}
+
+@media (max-width: 760px) {
+	ul.timeline-list:before {
+		left: 5%;
+	}
+	ul.timeline-list li:before {
+		left: 5%;
+	}
+	ul.timeline-list li .timeline_content {
+		width: 85%;
+		float: right;
+		text-align: left;
+		margin: 1ch 0;
+	}
+	ul.timeline-list li:nth-child(2n) .timeline_content {
+		text-align: left;
+	}
+}

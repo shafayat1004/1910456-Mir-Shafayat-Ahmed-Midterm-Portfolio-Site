@@ -6,8 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mir Shafayat Ahmed Portfolio</title>
-  <link rel="stylesheet" href="static/css/bootstrap 5.css">
+  <link rel="stylesheet" href="static/css/bootstrap.css">
   <link rel="stylesheet" href="static/css/my.css">
+  <link rel="stylesheet" href="static/css/timeline.css">
 </head>
 
 <body>
@@ -20,7 +21,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <!-- Nav tabs -->
-        <ul class="nav nav-pills" id="myTab" role="tablist">
+        <ul class="nav nav-pills" id="myTabs" role="tablist">
           <li class="nav-item" role="presentation">
             <button class="nav-link active" id="personal-tab" data-bs-toggle="tab" data-bs-target="#personal" type="button" role="tab" aria-controls="personal" aria-selected="true">Personal</button>
           </li>
@@ -28,7 +29,7 @@
             <button class="nav-link" id="education-tab" data-bs-toggle="tab" data-bs-target="#education" type="button" role="tab" aria-controls="education" aria-selected="false">Education</button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="job-experience-tab" data-bs-toggle="tab" data-bs-target="#job-experience" type="button" role="tab" aria-controls="job-experience" aria-selected="false">Job Experience</button>
+            <button class="nav-link" id="work-experience-tab" data-bs-toggle="tab" data-bs-target="#work-experience" type="button" role="tab" aria-controls="work-experience" aria-selected="false">Work Experience</button>
           </li>
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="projects-tab" data-bs-toggle="tab" data-bs-target="#projects" type="button" role="tab" aria-controls="projects" aria-selected="false">Projects</button>
@@ -39,8 +40,15 @@
   </nav>
 
 <!-- Tab panes -->
+
+
 <div class="tab-content">
-  <div class="tab-pane active" id="personal" role="tabpanel" aria-labelledby="personal-tab">
+
+
+  <!-- PERSONAL TAB -->
+
+
+  <div class="tab-pane" id="personal" role="tabpanel" aria-labelledby="personal-tab">
     <section class="card" style="background-color: aquamarine;">
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore commodi, praesentium eligendi cum ratione pariatur harum sit architecto iste quidem. Repellat impedit voluptate eos aliquid! Suscipit accusamus deserunt doloremque eos.lore
@@ -75,21 +83,65 @@
       </p>
     </section>
   </div>
-  <div class="tab-pane" id="education" role="tabpanel" aria-labelledby="education-tab">
-    <section class="card" style="background-color: rgb(44, 124, 111);">
-      <p>
-        Lorfg jrundrtunrtnudrtuhdrem ipsum dolor sit amet consectetur adipisicing elit. Labore commodi, praesentium eligendi cum ratione pariatur harum sit architecto iste quidem. Repellat impedit voluptate eos aliquid! Suscipit accusamus deserunt doloremque eos.lore
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore commodi, praesentium eligendi cum ratione pariatur harum sit architecto iste quidem. Repellat impedit voluptate eos aliquid! Suscipit accusamus deserunt doloremque eos.lore
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore commodi, praesentium eligendi cum ratione pariatur harum sit architecto iste quidem. Repellat impedit voluptate eos aliquid! Suscipit accusamus deserunt doloremque eos.lore
-      </p>
+
+
+  <!-- EDUCATION TAB -->
+
+
+  <div class="tab-pane active" id="education" role="tabpanel" aria-labelledby="education-tab">
+    <section class="education-timeline">
+      <div class="container">
+        <div class="row">
+          <ul class="timeline-list">
+            <!-- Single Experience -->
+            <li>
+              <div class="timeline_content">
+                  <span>Till 2010</span>
+                  <h4>International School And College (ISC)</h4>
+                  <p>Chattogram, Bangladesh</p>
+                  <p>Nursery to Grade 4 dsfhonhld oighsod  iuhvgoiu vngaoug yaweo ugaweb8tgbo</p>
+                  
+              </div>
+            </li>
+            <!-- Single Experience -->
+            <li>
+              <div class="timeline_content">
+                <span>2010-2018</span>
+                <p>
+                  <h4>Chittagong International School</h4>
+                  Chattogram, Bangladesh
+                </p>
+                <p>We gather your business and products information. We then determine the direction of the project and understand your goals and we combine your ideas with ours for an amazing website.</p>
+              </div>
+            </li>
+            <!-- Single Experience -->
+            <li>
+              <div class="timeline_content">
+              <span>2012-2015</span>
+                  <h4>Senior Developer</h4>
+                  <p>We gather your business and products information. We then determine the direction of the project and understand your goals and we combine your ideas with ours for an amazing website.</p>
+              </div>
+            </li>
+            <!-- Single Experience -->
+            <li>
+              <div class="timeline_content">
+              <span>2015-2018</span>
+                  <h4>Project Manager</h4>
+                  <p>We gather your business and products information. We then determine the direction of the project and understand your goals and we combine your ideas with ours for an amazing website.</p>
+              </div>
+            </li>
+        </ul>
+        </div>
+      </div>
     </section>
 
   </div>
-  <div class="tab-pane" id="job-experience" role="tabpanel" aria-labelledby="job-experience-tab">
+
+
+  <!-- WORK EXPERIENCE TAB -->
+
+
+  <div class="tab-pane" id="work-experience" role="tabpanel" aria-labelledby="work-experience-tab">
     <section class="card" style="background-color: rgb(104, 67, 19);">
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore commodi, praesentium eligendi cum ratione pariatur harum sit architecto iste quidem. Repellat impedit voluptate eos aliquid! Suscipit accusamus deserunt doloremque eos.lore
@@ -103,6 +155,11 @@
     </section>
 
   </div>
+
+
+  <!-- PROJECTS TAB -->
+
+
   <div class="tab-pane" id="projects" role="tabpanel" aria-labelledby="projects-tab">
     <section class="card" style="background-color: rgb(217, 255, 127);">
       <p>
@@ -118,7 +175,8 @@
 
   </div>
 </div>
-<script src="bootstrap 5.js"></script>
+
+<script src="bootstrap.js"></script>
 <script src="main.js"></script>
 </body>
 
