@@ -12,7 +12,8 @@
 	--border-width: 0.3rem;
 	--marker-color: #ff8080;
 	--card-bg: rgba(255, 241, 196, 0.76);
-	--shadows-inner: 1px 1px 10px inset var(--bg-darker), -1px -1px 10px inset var(--bg-darker)
+	--shadows-inner: 1px 1px 10px inset var(--bg-darker), -1px -1px 10px inset var(--bg-darker);
+	--font-color-default: #333;
 }
 
 
@@ -24,7 +25,11 @@
 ul.timeline-list {
 	position: relative;
 	margin: 0;
-	padding: 0
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	width: 90vw;
+	flex: 1;
 }
 ul.timeline-list:before {
 	position: absolute;
@@ -53,7 +58,6 @@ ul.timeline-list li:before {
 	border-radius: 50%;
 }
 ul.timeline-list li {
-	min-width: 45rem;
 	position: relative;
 	clear: both;
 	display: table;
@@ -66,7 +70,7 @@ ul.timeline-list li {
 }
 ul.timeline-list li .timeline_content {
 	width: 45%;
-	color: #333;
+	color: var(--font-color-default);
 	padding: 30px;
 	float: left;
 	text-align: right;
@@ -78,7 +82,10 @@ ul.timeline-list li:nth-child(2n) .timeline_content {
 .timeline_content h4 {
 	font-size: 22px;
 	font-weight: 600;
-	margin: 10px 0;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+	
 }
 .timeline_content span {
 	font-size: 18px;
