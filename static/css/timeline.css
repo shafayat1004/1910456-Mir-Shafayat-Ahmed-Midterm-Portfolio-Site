@@ -12,7 +12,8 @@
 	--border-width: 0.3rem;
 	--marker-color: #ff8080;
 	--card-bg: rgba(255, 241, 196, 0.76);
-	--shadows-inner: 1px 1px 10px inset var(--bg-darker), -1px -1px 10px inset var(--bg-darker);
+	--shadows-inner-l: 1px 1px 10px inset var(--bg-darker), -1px -1px 10px inset var(--bg-darker);
+	--shadows-inner-s: 1px 1px 3px inset var(--bg-darker), -1px -1px 3px inset var(--bg-darker);
 	--font-color-default: #333;
 }
 
@@ -64,7 +65,7 @@ ul.timeline-list li {
 }
 .timeline_content {
 	border: var(--border-width) solid var(--nav-bg);
-	box-shadow: var(--shadows), var(--shadows-inner);
+	box-shadow: var(--shadows), var(--shadows-inner-l);
 	border-radius: var(--border-radius-s);
 	background-color: var(--card-bg)
 }

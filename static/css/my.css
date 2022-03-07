@@ -7,6 +7,14 @@
     --border-radius-s:10px;
     --bg-darker: #3a5a55b0;
     --bg-lighter: rgb(135, 207, 177);
+	--timeline-bg: rgba(197, 255, 130, 0);
+	--shadows: 20px 20px 30px;
+	--border-width: 0.3rem;
+	--marker-color: #ff8080;
+	--card-bg: rgba(255, 241, 196, 0.76);
+	--shadows-inner-l: 1px 1px 10px inset var(--bg-darker), -1px -1px 10px inset var(--bg-darker);
+    --shadows-inner-s: 1px 1px 3px inset var(--bg-darker), -1px -1px 3px inset var(--bg-darker);
+	--font-color-default: #333;
 
 }
 body{
@@ -56,7 +64,7 @@ body::before{
 .navbar{
     margin: 2ch;
     text-align: center;
-    box-shadow: 5px 5px 8px var(--bg-darker);
+    box-shadow: 5px 5px 8px var(--bg-darker), var(--shadows-inner-s);
 }
 .navbar-collapse{
     justify-content: center;
@@ -84,6 +92,7 @@ body::before{
 }
 .nav{
     align-items: center;
+    justify-content: center;
     gap: 1ch;
 }
 .navbar-brand{
@@ -102,16 +111,16 @@ body::before{
     .navbar{
         margin: 2ch 0;
     }
-}
-@media (max-width: 991px) {
-    .navbar-brand{
-        display: block;
-    }
     .nav{
         display: grid;
         grid-template-columns: auto auto;
         justify-content: center;
         align-content: center;
+    }
+}
+@media (max-width: 991px) {
+    .navbar-brand{
+        display: block;
     }
     .nav *{
         height: 4.5rem;
