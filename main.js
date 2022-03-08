@@ -41,5 +41,4 @@ function changeNavbarBrand() {
             navbarBrand.innerHTML = ("Mir Shafayat Ahmed")
             break;
     }
-    
 }

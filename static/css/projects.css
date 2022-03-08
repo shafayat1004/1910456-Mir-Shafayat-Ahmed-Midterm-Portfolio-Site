@@ -1,0 +1,24 @@
+.card.project{
+    box-shadow: var(--shadows), var(--shadows-inner-l);
+    border-radius: var(--border-radius-s);
+    border: var(--border-width) solid var(--nav-bg);
+    min-width: 20rem;
+    background: var(--minty-glass);
+}
+
+.card-header{
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-header > .btn-group{
+    margin: 0;
+    padding: 0;
+}
+
+.card-header > .btn-group img{
+    width: 2em;
+}
