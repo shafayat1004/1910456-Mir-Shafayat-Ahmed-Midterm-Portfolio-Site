@@ -5,7 +5,6 @@
     min-width: 20rem;
     max-height: 80vh;
     background: var(--minty-glass);
-    overflow: auto;
 }
 
 .card-header{
@@ -23,4 +22,7 @@
 
 .card-header > .btn-group img{
     width: 2em;
+}
+.card-content{
+    overflow: auto;
 }
