@@ -42,3 +42,21 @@ function changeNavbarBrand() {
             break;
     }
 }
+
+// let cardNextBtns = document.querySelectorAll(".card-next-btn");
+// let cardPrevioustBtns = document.querySelectorAll(".card-previous-btn");
+
+// cardNextBtns.forEach(btn => {
+//     btn.addEventListener("click", cardNextPage);
+// })
+
+// cardPrevioustBtns.forEach(btn => {
+//     btn.addEventListener("click", cardPreviousPage);
+// })
+
+// function cardNextPage() {
+    
+// }
+// function cardPreviousPage() {
+    
+// }

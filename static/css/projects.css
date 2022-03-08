@@ -3,8 +3,9 @@
     border-radius: var(--border-radius-s);
     border: var(--border-width) solid var(--nav-bg);
     min-width: 20rem;
-    max-height: 80vh;
+    height: 80vh;
     background: var(--minty-glass);
+
 }
 
 .card-header{
@@ -25,4 +26,5 @@
 }
 .card-content{
     overflow: auto;
+    /* height: 80vh; */
 }
