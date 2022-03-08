@@ -97,11 +97,39 @@ body::before{
 }
 .navbar-brand{
     display: none;
-    padding: 0.3rem 0.5rem;
-	font-weight: 800;
+    padding: 0.3rem 0.3rem;
+	font-weight: 600;
     text-shadow: 5px 5px 15px var(--nav-btn-hover);
     text-transform: uppercase;
     border-radius: var(--border-radius-s);
+}
+#myTabs *{
+    border-radius: var(--border-radius-s);
+}
+
+#myTabs > .nav-item {
+    background-color: var(--nav-btn);
+    /* background-color: aqua; */
+}
+#myTabs > .nav-item img{
+    max-height: 3em;
+    margin: 0.3rem 0;
+}
+.nav-pills .nav-link.active {
+    color: rgb(41, 65, 44);
+    background-color: var(--bg);
+    box-shadow: 5px 5px 8px var(--bg-darker);
+}
+.nav-link{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    grid-auto-rows: 1fr;
+    padding: 0 0.9rem;
+    gap: 0.8rem;
+    width: 100%;
+    font-weight: 800;
+    color: black;
 }
 @media (max-width: 760px) {
     .navbar-brand{
@@ -117,6 +145,11 @@ body::before{
         justify-content: center;
         align-content: center;
     }
+    .nav-link{
+        padding: 0 0.5rem;
+        gap: 0.8rem;
+    }
+    
 }
 @media (max-width: 991px) {
     .navbar-brand{
@@ -129,24 +162,6 @@ body::before{
     }
 }
 
-#myTabs *{
-    border-radius: var(--border-radius-s);
-}
-
-#myTabs > .nav-item {
-    background-color: var(--nav-btn);
-    /* background-color: aqua; */
-}
-.nav-pills .nav-link.active {
-    color: rgb(41, 65, 44);
-    background-color: var(--bg);
-    box-shadow: 5px 5px 8px var(--bg-darker);
-}
-.nav-link{
-    width: 100%;
-    font-weight: 800;
-    color: black;
-}
 .nav-link:hover{
     color: black;
     background-color: var(--nav-btn-hover);
