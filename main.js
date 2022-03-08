@@ -43,5 +43,3 @@ function changeNavbarBrand() {
     }
     
 }
-
-console.log(navPills);
