@@ -21,12 +21,12 @@ body{
     font-family: poppins, Georgia, 'Times New Roman', Times, serif;
     background-color: var(--bg);
     margin-bottom: 10ch;
-    cursor: url("/static/images/cursor.png"), default;
+    cursor: url("../images/cursor.png"), default;
     background-attachment: fixed;
 }
 body::before{
     content: "";
-    background-image: url("/static/images/marble.jpeg");
+    background-image: url("../images/marble.jpeg");
     background-size: cover;
     position: fixed;
     top: 0px;
@@ -71,7 +71,7 @@ body::before{
 }
 .navbar::before{
     content: "";
-    background-image: url('/static/images/grain.png');
+    background-image: url('../images/grain.png');
     position: absolute;
     border-radius: var(--border-radius-l);
     top: 0px;
