@@ -1,7 +1,8 @@
 .card.project{
     width: 30rem;
     min-width: 20rem;
-    height: 80vh;
+    height: 50rem;
+    max-height: 80vh;
     background: var(--minty-glass);
 
 }
