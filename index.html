@@ -8,7 +8,8 @@
   <title>Mir Shafayat Ahmed Portfolio</title>
   <link rel="stylesheet" href="static/css/bootstrap.css">
   <link rel="stylesheet" href="static/css/my.css">
-  <link rel="stylesheet" href="static/css/timeline.css">
+  <link rel="stylesheet" href="static/css/education.css">
+  <link rel="stylesheet" href="static/css/work.css">
   <link rel="stylesheet" href="static/css/personal.css">
   <link rel="stylesheet" href="static/css/projects.css">
 </head>
@@ -62,7 +63,11 @@
 <div class="tab-content">
 
 
-  <!-- PERSONAL TAB -->
+  <!--
+  #####################################################
+  #################  PERSONAL TAB #####################
+  #####################################################
+  -->
 
 
   <div class="tab-pane active" id="personal" role="tabpanel" aria-labelledby="personal-tab">
@@ -77,19 +82,46 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore commodi, praesentium eligendi cum ratione pariatur harum sit architecto iste quidem. Repellat impedit voluptate eos aliquid! Suscipit accusamus deserunt doloremque eos.lore
       </p>
     </section>
-    <section class="card" style="background-color: rgb(127, 255, 155);">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore commodi, praesentium eligendi cum ratione pariatur harum sit architecto iste quidem. Repellat impedit voluptate eos aliquid! Suscipit accusamus deserunt doloremque eos.lore
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore commodi, praesentium eligendi cum ratione pariatur harum sit architecto iste quidem. Repellat impedit voluptate eos aliquid! Suscipit accusamus deserunt doloremque eos.lore
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore commodi, praesentium eligendi cum ratione pariatur harum sit architecto iste quidem. Repellat impedit voluptate eos aliquid! Suscipit accusamus deserunt doloremque eos.lore
-      </p>
+    <!-- ###########
+      SKILLS  
+    ########### -->
+    <section class="card skills">
+      <div class="card-header personal skills">
+        <h3>Skills</h3>
+        <div class="btn-group">
+          <button class="btn" type="button" data-bs-target="#skill-slide" data-bs-slide="prev"><img src="static/images/previous.svg" alt=""></button>
+          <button class="btn" type="button" data-bs-target="#skill-slide" data-bs-slide="next"><img src="static/images/next.svg" alt=""></button>
+        </div>
+      </div>
+      <hr>
+      <div class="card-content">
+        <div id="skill-slide" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <h4>Languages: </h4>
+              Python, Java, C++, SQL, LaTeX
+            </div>
+            <div class="carousel-item">
+              <h4>Developer Tools:</h4> 
+              VS Code
+            </div>
+            <div class="carousel-item">
+              <h4>Technologies/Frameworks:</h4> 
+              Linux, Git, Django
+            </div>
+            <div class="carousel-item">
+              <h4>Other Softwares:</h4> 
+              Sketchup, Photoshop, Lightroom, Premiere, Blender, MS Office Suite
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+    <!-- ###########  
+      CONTACT ME  
+    ########### -->
     <section class="card contact-me">
-      <div class="card-header contact">
+      <div class="card-header personal contact">
         <h3>Let's get in touch!</h3>
       </div>
       <hr>
@@ -156,7 +188,11 @@
   </div>
 
 
-  <!-- EDUCATION TAB -->
+  <!--
+  #####################################################
+  #################  EDUCATION TAB ####################
+  #####################################################
+  -->
 
 
   <div class="tab-pane" id="education" role="tabpanel" aria-labelledby="education-tab">
@@ -218,27 +254,42 @@
   </div>
 
 
-  <!-- WORK EXPERIENCE TAB -->
-
-
+  <!--
+  #####################################################
+  ##############  WORK EXPERIENCE TAB #################
+  #####################################################
+  -->
   <div class="tab-pane" id="work-experience" role="tabpanel" aria-labelledby="work-experience-tab">
-    <section class="card" style="background-color: rgb(104, 67, 19);">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore commodi, praesentium eligendi cum ratione pariatur harum sit architecto iste quidem. Repellat impedit voluptate eos aliquid! Suscipit accusamus deserunt doloremque eos.lore
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore commodi, praesentium eligendi cum ratione pariatur harum sit architecto iste quidem. Repellat impedit voluptate eos aliquid! Suscipit accusamus deserunt doloremque eos.lore
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore commodi, praesentium eligendi cum ratione pariatur harum sit architecto iste quidem. Repellat impedit voluptate eos aliquid! Suscipit accusamus deserunt doloremque eos.lore
-      </p>
+    <section class="card work">
+      <div class="card-header work">
+        <div>
+          <h3>Physics Teacher</h3>
+          <h6>Chittagong International School</h6>
+        </div>
+        <span>Sept 2018 – June 2019</span>
+      </div>
+      <hr>
+      <div class="card-content">
+        <ul>
+          <li>Fulltime teacher of Science, Grade 6 and 7</li>
+          <li>Fulltime teacher of Physics, Grade 8 and 9</li>
+        </ul>
+        <div class="text-center">
+          <a href="https://1drv.ms/u/s!AjkbeIACZkrag-k99kA1Wnxdp0omJQ?e=hXbuY1/" target="_blank"
+          method="post">Experience Certificate</a>
+        </div>
+
+      </div>
     </section>
 
   </div>
 
 
-  <!-- PROJECTS TAB -->
-
+  <!--
+  #####################################################
+  #################  PROJECTS TAB #####################
+  #####################################################
+  -->
 
   <div class="tab-pane" id="projects" role="tabpanel" aria-labelledby="projects-tab">
     <section class="card project">
@@ -263,9 +314,6 @@
                 <li>Simulating Operations of a Stationary, Card maker company</li>
               </ul>
               <a href="https://github.com/shafayat1004/Card-Making-Company-Software">GitHub Link Here</a>
-            </div>
-            <div class="carousel-item">
-              ipsum
             </div>
           </div>
         </div>

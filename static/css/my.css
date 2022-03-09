@@ -16,6 +16,8 @@
 	--card-bg: rgba(255, 241, 196, var(--card-alpha));
     --card-bg-2: rgba(226, 253, 195, var(--card-alpha));
     --card-bg-3: rgba(250, 134, 119, var(--card-alpha));
+    --card-bg-4: rgba(173, 252, 255, var(--card-alpha));
+    --card-bg-5: rgba(250, 255, 173, 0.75);
     --textarea-color : rgba(255, 234, 220, 0.87);
 	--shadows-inner-l: 1px 1px 10px inset var(--bg-darker), -1px -1px 10px inset var(--bg-darker);
     --shadows-inner-s: 1px 1px 3px inset var(--bg-darker), -1px -1px 3px inset var(--bg-darker);
@@ -55,7 +57,7 @@ body{
 iframe {
     border-radius: var(--border-radius-s);
     width: 100%;
-    height: 30rem;
+    height: 25rem;
 }
 
 /* ###################################################################### */
