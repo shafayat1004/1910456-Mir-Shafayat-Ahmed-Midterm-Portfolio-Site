@@ -23,6 +23,14 @@
     --minty-glass: rgba(198, 229, 219, var(--card-alpha));
 
 }
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
 body{
     font-family: poppins, Georgia, 'Times New Roman', Times, serif;
     background-color: var(--bg);
