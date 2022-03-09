@@ -91,3 +91,6 @@ textarea.form-control{
     /* height: 25rem; */
     max-height: 80vh;
 }
+.skills .card-content{
+    min-height: 10rem;
+}
