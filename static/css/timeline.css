@@ -53,7 +53,7 @@ ul.timeline-list li {
 	clear: both;
 	display: table;
 }
-.timeline_content {
+.timeline_content{
 	border: var(--border-width) solid var(--nav-bg);
 	box-shadow: var(--shadows), var(--shadows-inner-l);
 	border-radius: var(--border-radius-s);

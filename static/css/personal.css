@@ -1,0 +1,55 @@
+.card.contact-me{
+    min-width: 40vw;
+    background-color: var(--card-bg-3);
+}
+.card-header.contact{
+    justify-content: center;
+    text-transform: capitalize;
+    border-radius: var(--border-radius-s);
+}
+.card-header.contact h3{
+    font-weight: 900;
+    text-shadow: var(--shadows);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(0, 80, 201, 0.699)
+}
+.contact-form{
+    min-width: 40ch;
+}
+.form-control, .form-control:focus{
+    border-radius: var(--border-radius-s);
+    background-color: var(--textarea-color);
+}
+
+textarea.form-control{
+    height: 15rem;
+    max-height: 20rem;
+}
+.input-group-text{
+    height: 100%;
+    background-color: rgba(224, 135, 132, 0.808);
+    border-radius: 0;
+    border-top-left-radius: var(--border-radius-s);
+    border-bottom-left-radius: var(--border-radius-s);
+
+}
+.btn.btn-info.btn-block{
+    border-radius: var(--border-radius-s);
+    background-color: var(--textarea-color);
+}
+
+.contact-me > .card-content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.contact-me .social{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.contact-me .social img{
+    max-height: 5rem;
+    max-width: 5rem;
+}

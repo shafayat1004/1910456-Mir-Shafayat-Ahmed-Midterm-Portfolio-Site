@@ -1,7 +1,4 @@
 .card.project{
-    box-shadow: var(--shadows), var(--shadows-inner-l);
-    border-radius: var(--border-radius-s);
-    border: var(--border-width) solid var(--nav-bg);
     width: 30rem;
     min-width: 20rem;
     height: 80vh;
