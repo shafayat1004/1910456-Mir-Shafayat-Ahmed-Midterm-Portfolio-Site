@@ -1,6 +1,6 @@
 :root{
     --bg: rgb(219, 255, 248);
-    --nav-bg: rgba(172, 187, 255, 0.97);
+    --nav-bg: rgba(172, 187, 255, 0.7);
     --bg-darker: #3a5a55b0;
     --nav-btn: rgba(244, 230, 255, 0.911);
     --nav-btn-hover: rgb(243, 238, 255);
@@ -12,14 +12,15 @@
     --shadows-shorter: 7px 7px 10px;
 	--border-width: 0.3rem;
 	--marker-color: #ff8080;
-	--card-bg: rgba(255, 241, 196, 0.76);
-    --card-bg-2: rgba(226, 253, 195, 0.616);
-    --card-bg-3: rgba(250, 134, 119, 0.671);
+    --card-alpha : 0.75;
+	--card-bg: rgba(255, 241, 196, var(--card-alpha));
+    --card-bg-2: rgba(226, 253, 195, var(--card-alpha));
+    --card-bg-3: rgba(250, 134, 119, var(--card-alpha));
     --textarea-color : rgba(255, 234, 220, 0.87);
 	--shadows-inner-l: 1px 1px 10px inset var(--bg-darker), -1px -1px 10px inset var(--bg-darker);
     --shadows-inner-s: 1px 1px 3px inset var(--bg-darker), -1px -1px 3px inset var(--bg-darker);
 	--font-color-default: #333;
-    --minty-glass: rgba(115, 219, 188, 0.336);
+    --minty-glass: rgba(198, 229, 219, var(--card-alpha));
 
 }
 body{
@@ -31,7 +32,8 @@ body{
 }
 body::before{
     content: "";
-    background-image: url("../images/marble.jpeg");
+    /* background-image: url("../images/marble.jpeg"); */
+    background-image: url("../images/ocean.jpg");
     background-size: cover;
     position: fixed;
     top: 0px;
